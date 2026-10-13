@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adversaria"
+version = "0.1.0"
+description = "Calibration-tracked multi-agent debate: votes weighted by proven calibration, arguments scored for novelty"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Habib Ur Rehman" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+keywords = ["multi-agent", "debate", "calibration", "voting", "llm-agents"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/habib-analyst/adversaria"
+Repository = "https://github.com/habib-analyst/adversaria"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
